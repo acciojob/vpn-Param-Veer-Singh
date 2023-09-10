@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
 
         for(Country country : countryList){
             if(country.getCountryName().equals(countryName)){
-                user.setCountry(country);
+                user.setOriginalCountry(country);
                 countryCode = country.getCode();
                 break;
             }
